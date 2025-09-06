@@ -98,10 +98,12 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .topicos__links:hover {
     background-color: var(--dourado);
+    transform: scale(1.05);
 }
 
 
@@ -125,6 +127,20 @@ body{
 .swiper-slide img {
     width: 100%;
     border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: var(--azul);
+    color: var(--branco);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--dourado);
+    transform: scale(1.05);
 }
 
 .depoimentos {
