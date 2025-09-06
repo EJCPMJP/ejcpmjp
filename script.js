@@ -55,3 +55,10 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 });
+
+const headerToggle = document.querySelector('.header__toggle');
+const headerMenu = document.querySelector('.header__menu');
+
+headerToggle.addEventListener('click', () => {
+  headerMenu.classList.toggle('header__menu--ativo');
+});

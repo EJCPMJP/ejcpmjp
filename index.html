@@ -12,9 +12,15 @@
 <body>
     <canvas id="starfield"></canvas>
     <header class="cabecalho">
-        <div class="container">
+        <nav class="header__nav container">
             <h1 class="cabecalho__titulo"><span class="cabecalho__titulo--negrito">EJC</span> Menino Jesus de Praga</h1>
-        </div>
+            <button class="header__toggle" aria-label="Abrir menu">&#9776;</button>
+            <ul class="header__menu">
+                <li class="header__item"><a href="#galeria" class="header__link">Galeria</a></li>
+                <li class="header__item"><a href="#depoimentos" class="header__link">Depoimentos</a></li>
+                <li class="header__item"><a href="#topicos" class="header__link">Links</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="banner">
@@ -23,7 +29,7 @@
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5BltlDGKokhZbdjathPJPe?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </section>
 
-    <section class="galeria">
+    <section id="galeria" class="galeria">
         <h2 class="galeria__titulo">Galeria</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -37,7 +43,7 @@
         </div>
     </section>
 
-    <section class="depoimentos">
+    <section id="depoimentos" class="depoimentos">
         <h2 class="depoimentos__titulo">Depoimentos</h2>
         <div class="depoimentos__container">
             <article class="depoimento">
@@ -55,7 +61,7 @@
         </div>
     </section>
 
-    <section class="topicos">
+    <section id="topicos" class="topicos">
         <h2 class="topicos__titulo">Acesse também</h2>
         <ul class="topicos__lista">
             <li class="topicos__item">
