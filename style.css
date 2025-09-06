@@ -57,7 +57,7 @@ body{
     background: linear-gradient(97.54deg, rgba(0,47,82,0.85) 35.49%, rgba(50,101,137,0.85) 165.37%);
     color: var(--branco);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .banner__titulo {
@@ -72,7 +72,7 @@ body{
 
 .topicos {
     background-color: rgba(255,255,255,0.8);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .topicos__titulo {
@@ -107,7 +107,7 @@ body{
 
 .galeria {
     background-color: rgba(255,255,255,0.8);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .galeria__titulo {
@@ -129,7 +129,7 @@ body{
 
 .depoimentos {
     background-color: rgba(255,255,255,0.8);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     color: var(--azul);
 }
 
@@ -170,7 +170,7 @@ body{
 
 .rodape {
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: transparent;
     color: var(--azul);
 }
