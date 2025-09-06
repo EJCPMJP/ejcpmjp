@@ -1,24 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
     
-:root{
-    --cor-de-fundo: #EBECEE;
+:root {
+    --cor-primaria: #002F52;
+    --cor-primaria-transparente: rgba(0, 47, 82, 0.85);
+    --cor-primaria-clara-transparente: rgba(50, 101, 137, 0.85);
+    --cor-secundaria: #6b4c00;
+    --cor-fundo: #EBECEE;
+    --cor-fundo-caixa: rgba(255, 255, 255, 0.8);
+    --cor-gradiente: linear-gradient(97.54deg, var(--cor-primaria-transparente) 35.49%, var(--cor-primaria-clara-transparente) 165.37%);
+    --cor-preta: #000000;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
     --branco: #FFFFFF;
-    --laranja: #EB9B00;
-    --azul-gradiente: linear-gradient( 97.54deg, #002F52 35.49%, #326589 165.37%);
-    --fonte-principal:"Poppins";
-    --azul: #002F52;
-    --fonte-secundaria: "Josefin Sans";
-    --dourado: #CDA434;
-
+    --fonte-titulo: "Josefin Sans", sans-serif;
+    --fonte-corpo: "Poppins", sans-serif;
 }
 
 body{
-    background-color: transparent;
-    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-corpo);
     font-size: 16px;
     font-weight: 400;
-    color: var(--azul);
+    color: var(--cor-primaria);
 }
 
 #starfield {
@@ -28,7 +31,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #000;
+    background: var(--cor-preta);
 }
 
 .container {
@@ -38,7 +41,7 @@ body{
 }
 
 .cabecalho {
-    background: rgba(0, 47, 82, 0.85);
+    background: var(--cor-primaria-transparente);
     color: var(--branco);
     padding: 1rem 0;
     text-align: center;
@@ -49,18 +52,19 @@ body{
 }
 
 .cabecalho__titulo {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
 }
 
 .banner {
-    background: linear-gradient(97.54deg, rgba(0,47,82,0.85) 35.49%, rgba(50,101,137,0.85) 165.37%);
+    background: var(--cor-gradiente);
     color: var(--branco);
     text-align: center;
     padding: 2rem 1rem;
 }
 
 .banner__titulo {
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -71,14 +75,16 @@ body{
 }
 
 .topicos {
-    background-color: rgba(255,255,255,0.8);
+    background-color: var(--cor-fundo-caixa);
     padding: 2rem 1rem;
 }
 
 .topicos__titulo {
     text-align: center;
+    font-family: var(--fonte-titulo);
     font-size: 1.25rem;
-    color: var(--azul);
+    font-weight: 700;
+    color: var(--cor-primaria);
     margin-bottom: 1rem;
 }
 
@@ -94,26 +100,28 @@ body{
 .topicos__links {
     text-decoration: none;
     color: var(--branco);
-    background-color: var(--azul);
+    background-color: var(--cor-primaria);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-weight: 700;
 }
 
 .topicos__links:hover {
-    background-color: var(--dourado);
+    background-color: var(--cor-secundaria);
 }
 
 
 .galeria {
-    background-color: rgba(255,255,255,0.8);
+    background-color: var(--cor-fundo-caixa);
     padding: 2rem 1rem;
 }
 
 .galeria__titulo {
     text-align: center;
+    font-family: var(--fonte-titulo);
     font-size: 1.25rem;
-    color: var(--azul);
+    font-weight: 700;
+    color: var(--cor-primaria);
     margin-bottom: 1rem;
 }
 
@@ -128,16 +136,17 @@ body{
 }
 
 .depoimentos {
-    background-color: rgba(255,255,255,0.8);
+    background-color: var(--cor-fundo-caixa);
     padding: 2rem 1rem;
-    color: var(--azul);
+    color: var(--cor-primaria);
 }
 
 .depoimentos__titulo {
     text-align: center;
+    font-family: var(--fonte-titulo);
     font-size: 1.25rem;
-    color: var(--dourado);
-    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    color: var(--cor-secundaria);
     margin-bottom: 1rem;
 }
 
@@ -150,11 +159,11 @@ body{
 }
 
 .depoimento {
-    background: var(--azul-gradiente);
+    background: var(--cor-gradiente);
     color: var(--branco);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px var(--cor-sombra);
 }
 
 .depoimento__texto {
@@ -165,13 +174,13 @@ body{
 .depoimento__autor {
     text-align: right;
     font-weight: 700;
-    color: var(--dourado);
+    color: var(--cor-secundaria);
 }
 
 .rodape {
     text-align: center;
     padding: 1rem;
     background-color: transparent;
-    color: var(--azul);
+    color: var(--cor-primaria);
 }
 
