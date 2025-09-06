@@ -13,11 +13,21 @@
 }
 
 body{
-    background-color: var(--cor-de-fundo);
+    background-color: transparent;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
     color: var(--azul);
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
 }
 
 .container {
@@ -27,7 +37,7 @@ body{
 }
 
 .cabecalho {
-    background: var(--azul);
+    background: rgba(0, 47, 82, 0.85);
     color: var(--branco);
     padding: 1rem 0;
     text-align: center;
@@ -38,7 +48,7 @@ body{
 }
 
 .banner {
-    background: var(--azul-gradiente);
+    background: linear-gradient(97.54deg, rgba(0,47,82,0.85) 35.49%, rgba(50,101,137,0.85) 165.37%);
     color: var(--branco);
     text-align: center;
     padding: 2rem 1rem;
@@ -55,7 +65,7 @@ body{
 }
 
 .topicos {
-    background-color: var(--branco);
+    background-color: rgba(255,255,255,0.8);
     padding: 2rem 1rem;
 }
 
@@ -91,7 +101,7 @@ body{
 .rodape {
     text-align: center;
     padding: 1rem;
-    background-color: var(--azul);
+    background-color: rgba(0,47,82,0.85);
     color: var(--branco);
 }
 
