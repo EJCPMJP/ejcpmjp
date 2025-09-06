@@ -175,3 +175,21 @@ body{
     color: var(--azul);
 }
 
+@media (max-width: 768px) {
+    .banner__titulo {
+        font-size: 1.25rem;
+    }
+
+    .depoimentos__titulo {
+        font-size: 1rem;
+    }
+
+    .depoimentos__container {
+        flex-direction: column;
+    }
+
+    .topicos__lista {
+        gap: 0.5rem;
+    }
+}
+
