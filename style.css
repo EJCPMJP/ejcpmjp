@@ -47,6 +47,11 @@ body{
     font-weight: 700;
 }
 
+.cabecalho__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
 .banner {
     background: linear-gradient(97.54deg, rgba(0,47,82,0.85) 35.49%, rgba(50,101,137,0.85) 165.37%);
     color: var(--branco);
@@ -98,10 +103,33 @@ body{
     background-color: var(--laranja);
 }
 
+
+.galeria {
+    background-color: rgba(255,255,255,0.8);
+    padding: 2rem 1rem;
+}
+
+.galeria__titulo {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 .rodape {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(0,47,82,0.85);
-    color: var(--branco);
+    background-color: transparent;
+    color: var(--azul);
 }
 
