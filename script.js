@@ -14,7 +14,8 @@ function createStars() {
     stars.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      size: Math.random() * 2,
+      // Garanta que o tamanho nunca seja 0 para evitar estrelas invisíveis
+      size: Math.random() * 1.5 + 0.5,
       speed: Math.random() * 0.5 + 0.1
     });
   }
@@ -32,6 +33,8 @@ function updateStars() {
       star.x = Math.random() * canvas.width;
     }
   }
+  // Restaura a opacidade padrão para futuras renderizações
+  ctx.globalAlpha = 1;
   requestAnimationFrame(updateStars);
 }
 
